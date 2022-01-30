@@ -7,6 +7,8 @@
     --main-btn-color: #FFFFFF;
     --header-text-color: #212121;
     --hero-btn: #212121;
+    --transition-duration: 250ms;
+    --main-cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 a,
@@ -95,7 +97,7 @@ body {
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 }
 
 .heder-logo {
@@ -136,7 +138,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--header-text-color);
     background-color: transparent;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration) , var(--main-cubic);
     position: relative;
 }
 
@@ -148,7 +150,7 @@ body {
     position: absolute;
     display: block;
     border-radius: 2px;
-    bottom: -28px;
+    bottom: -32px;
     left: 0;
 }
 
@@ -549,13 +551,8 @@ color: #212121;
 
 .contacts {
     background: #2F303A;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
-    
     padding-bottom: 60px;
     padding-top: 60px;
-    padding-left: 215px;
 }
 
 
@@ -605,7 +602,9 @@ color: #212121;
     color: var(--accent-color);
 } 
 
-
+.footer-contacts-mailing {
+    margin-left: auto;
+}
 
 
 .footer-contacts {
@@ -646,9 +645,9 @@ margin-bottom: 20px;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    background-color: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background  250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icons {
     fill: #FFFFFF;
 }
@@ -665,7 +664,6 @@ margin-bottom: 20px;
 }
 
 .mailing {
-    margin-left: 93px;
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;
@@ -685,8 +683,8 @@ margin-bottom: 20px;
     border-radius: 4px;
     outline: none;
     background-color: transparent;
-    margin-left: 93px;
     margin-top: 20px;
+    color: #ffffff
 }
 
 
@@ -697,6 +695,7 @@ margin-bottom: 20px;
     background-color: var(--accent-color);
     color: white;
     font-weight: bold;
+    border: none;
     font-size: 16px;
     line-height: 30px;
     display: flex;
@@ -753,7 +752,6 @@ margin-bottom: 20px;
     border: none;
     background: #F5F4FA;
     border-radius: 4px;
-    background-color: transparent;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
@@ -846,7 +844,7 @@ margin-bottom: 20px;
     overflow: auto;
     height: 100%;
     transform: translateY(100%);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition-duration) var(--main-cubic);
 }
 
 .about-second-portfolio-title {
@@ -1007,7 +1005,7 @@ color: var(--accent-color);
 }
 
 .form-field {
-    margin-bottom: 28px;
+    margin-bottom: 10px;
 }
 
 .input-text {
@@ -1029,13 +1027,13 @@ color: var(--accent-color);
 }
 
 .form-text {
-   padding-left: 16px;
-   padding-right: 16px;
-   padding-bottom: 12px;
-   padding-top: 12px;
-   color: rgba(117, 117, 117, 0.5);
-   outline: none;
-   transition: border-color 250ms;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    color: rgba(117, 117, 117, 0.5);
+    outline: none;
+    transition: border-color 250ms;
 }
 
 .form-text:focus {
@@ -1085,3 +1083,26 @@ background-size: cover;
 
 
 
+.modal-btn {
+    width: 200px;
+    height: 50px;
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) , background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+.modal-btn:focus 
+.modal-btn:hover{
+    background-color: #188CE8;
+    
+}

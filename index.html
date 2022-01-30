@@ -59,7 +59,7 @@
        <main class="">
              <section class="hero hero-bg">
                  <h1 class="hero-text" > Эффективные решения для вашего бизнеса</h1>
-                 <button class="hero-btn hero-link hero-button" type="button" data-modal-open > Заказать услугу </button>
+                 <button class="hero-btn hero-link " type="button" data-modal-open > Заказать услугу </button>
              </section>
 
 
@@ -484,7 +484,7 @@
 
 <!---------contacts---------->             
              <footer class="contacts">
-            <div class="footer-contacts">
+            <div class="footer-contacts container">
              <div>  
               <a href="/" class="logo-footer link" lang="en"><span class="logo-begin link">Web</span>Studio</a>
                 <address class="contacts-address">
@@ -502,7 +502,7 @@
               </div> 
 
               <div class="footer-contacts-icon">
-                <h3 class="join">присоединяйтесь</h3>
+                <p class="join">присоединяйтесь</p>
                  <ul class="join-list list">
                    <li class="join-item">
                      <a href="" class="join-icon">
@@ -550,7 +550,7 @@
                  </ul>
               </div>
                <div class="footer-contacts-mailing">
-                 <h3 class="mailing">Подпишитесь на рассылку</h3>
+                 <p class="mailing">Подпишитесь на рассылку</p>
                    <form action="#" class="contacts-mailing">
                      <div class="subscription-field">
                       <input type="text" 
@@ -576,7 +576,7 @@
              </footer>
               
              
-             <div class="backdrop " data-modal>
+             <div class="backdrop is-hidden " data-modal>
                 <div class="modal">
                   <p class="modal-title"> Оставьте свои данные, мы вам перезвоним </p>
                   <form action="#">
@@ -642,13 +642,12 @@
                           name="policy" 
                           id="policy" 
                           class="policy-check visually-hidden"
-                          />
-                          <label for="policy" class="check-text">Соглашаюсь с рассылкой и принимаю  <a href="" class="form-policy-link"> Условия договора</a> </label>
+                          /><label for="policy" class="check-text">Соглашаюсь с рассылкой и принимаю  <a href="" class="form-policy-link"> Условия договора</a> </label>
 
                         </div>
                         
 
-                       <button type="submit" class="hero-btn hero-link hero-button"> Отправить </button> 
+                       <button type="submit" class="modal-btn"> Отправить </button> 
                    </form>
                   <button type="button" class="modal-close" data-modal-close>
                     <svg class="model-close-icon"
